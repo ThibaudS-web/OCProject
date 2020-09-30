@@ -66,8 +66,8 @@ a.inscription:hover{
 }
 
 #bloc1{
-    max-width: 15%;
-    min-width: 45px;
+    height: 45px;
+    width: 45px;
     background-color: #F2F2F2;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -81,7 +81,7 @@ input{
     height: auto;
     text-align: center;
     font-weight: bold;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway' , sans-serif;
     border: none;
 
 }
@@ -97,7 +97,7 @@ form{
 }
 
 #button_search{
-    border: 2px #0065FC;
+    border: none;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -111,33 +111,17 @@ form{
 }
 
 #button_search_mini{
-    border: 1px #0065FC;
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
-    font-family: sans-serif;
     border-radius: 20px;
     width: 80px;
     display: none;
     font-size: 0.9em;
     text-align: center;
     height: 100%;
+    border: none;
 }
-
-#bloc3{
-    border: 1px solid #0065FC;
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    min-width: 100px;
-    max-width: 45%;
-    font-size: 0.9em;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
-
+ 
 #container_filter{
     display: flex;
     max-width: 30%;
@@ -188,13 +172,13 @@ form{
     font-family: 'Raleway', sans-serif;
 }
 
-.bloc1{
-    border: 3px solid #DEEBFF ;
+.bloc_icon{
+
     border-radius: 25px;
     max-height: 100%;
-    min-height: 44px;
+    min-height: 46px;
     max-width: 20%;
-    min-width: 44px;
+    min-width: 46px;
     background-color: #DEEBFF;
     align-self: center;
     display: flex;
@@ -664,6 +648,10 @@ a.link_footer:hover{
         border-top: none;
     }
 
+    li:active{
+        color: #0065FC;
+    }
+
     a.inscription{
         position: absolute;
         top: 35px;
@@ -695,8 +683,8 @@ a.link_footer:hover{
         width: 90px;
         height: 90px;
         background-color: #F2F2F2;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -711,7 +699,7 @@ a.link_footer:hover{
         height: 84px;
         text-align: center;
         font-weight: bold;
-        font-family: 'Raleway' sans-serif;
+        font-family: 'Raleway' , sans-serif;
         border-color: #F2F2F2;
         border: none;
         font-size: 1.6em;
@@ -726,8 +714,7 @@ a.link_footer:hover{
     }
 
     #button_search{
-        border: 1px #0065FC;
-        background-color: #0065FC;
+
         color: white;
         font-weight: bold;
         font-family: sans-serif;
@@ -740,11 +727,8 @@ a.link_footer:hover{
     }
     
     #button_search_mini{
-        border: 1px #0065FC;
-        background-color: #0065FC;
+
         color: white;
-        font-weight: bold;
-        font-family: sans-serif;
         border-radius: 20px;
         display: block;
         width: 100px;
@@ -795,8 +779,8 @@ a.link_footer:hover{
         text-align: center;
     }
     
-    .bloc1{
-        border: 3px solid #DEEBFF ;
+    .bloc_icon{
+
         border-radius: 80px;
         height: 100px;
         min-width: 100px ;
