@@ -66,8 +66,8 @@ a.inscription:hover{
 }
 
 #bloc1{
-    height: 45px;
-    width: 45px;
+    height: 59px;
+    width: 50px;
     background-color: #F2F2F2;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -310,7 +310,7 @@ span{
 
 #populaire{
     max-width: 100%;
-    min-width: 500px;
+    min-width: 450px;
     height: 850px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -329,7 +329,7 @@ span{
 .picture_marseille_populaire{
     background-color: white;
     max-width: 95%;
-    min-width: 450px;
+    min-width: 400px;
     height: 210px;
     box-shadow: 0px 0px 10px 0px #000;
     border-radius: 20px;
@@ -592,10 +592,468 @@ a.link_footer:hover{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1000px) and (min-width :480px)
+{
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
 
-@media all and (max-device-width: 480px)
+    #head{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+    }
+
+    #logo{
+        width: 180px;
+        height: 130px;
+    }
+
+    #menu{
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+        padding-left: 0px;
+    } 
+
+    #nav_hebergements{
+        padding-left: 0px;
+    }
+
+    nav a:hover{        
+        border-top: none;
+    }
+
+   ul li{
+        border-bottom: 5px solid #F2F2F2;
+        padding-bottom: 30px;
+        margin: auto;
+        width: 50%
+    }
+
+    li:hover{
+        border-bottom: 5px #0065FC solid;
+        padding-bottom: 30px;
+        color: #0065FC;
+        border-top: none;
+    }
+
+    a.inscription{
+        position: absolute;
+        top: 45px;
+        right: 25px; 
+        font-size: 2em;
+        text-align: end;  
+    }
+
+    #title_page{
+        font-size: 2em;
+        width: 100%;
+    }
+    
+    #title_head p{
+        font-size: 1.4em;
+    }
+
+    #container_filter{
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #bloc1{
+        width: 55px;
+        height: 61px;
+        background-color: #F2F2F2;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #localisation_icon{
+        width: 30px;
+    }
+
+    input{
+        width: 180px;
+        height: 55px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Raleway' , sans-serif;
+        border-color: #F2F2F2;
+        border: none;
+        font-size: 1.1em;
+    }
+
+    form{
+        display: flex;
+        border-bottom: 2px solid #F2F2F2;
+        border-top: 2px solid #F2F2F2;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #button_search{
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+        border-radius: 20px;
+        width: 80px;
+        display :none;
+        font-size: 0.9em;
+        text-align: center;
+        height: 100%;
+    }
+    
+    #button_search_mini{
+        color: white;
+        border-radius: 20px;
+        display: block;
+        width: 55px;
+        font-size: 0.9em;
+        text-align: center;
+        height: 100%;
+    }   
+
+    #bar_filter{
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .filtre{
+        width: 100%;
+        font-size: 1.2em; 
+    }
+
+    .container{
+        border-bottom: 3px solid #F2F2F2;
+        border-top: 3px solid #F2F2F2;
+        border-right: 3px solid #F2F2F2;
+        height: 60px;
+        width: 240px;
+        border-radius: 50px;
+        display: flex;
+        margin-bottom: 20px;    
+    }
+
+    .container:hover{
+        background-color: #0065FC;
+    }
+    
+    .container_p{
+        order : 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+        width: 100%;
+    }
+    
+    .container_p p, .filtre p{
+        font-size: 1em;
+    }
+    
+    .bloc_icon{
+        border-radius: 80px;
+        height: 100px;
+        min-width: 60px ;
+        background-color: #DEEBFF;
+        align-self: center;
+        display: flex;
+    }
+    
+    .svg1{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+
+    .svg_filter{
+        width: 40px;
+    }
+    
+    #info_bar{
+        display: flex;
+        width: 100%;
+        height: auto;
+        font-size: 1.2em;
+    }
+
+    #icon_info{
+        border: 2px solid #F2F2F2;
+        width: 40px;
+        border-radius: 50%; 
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    #info_svg{
+        display: flex;
+        align-items: center;
+    }
+
+    #svg_info{
+        width: 10px;
+    }
+
+    #text_info{
+        font-size: 1em;
+    }
+    
+    #section1{
+        display: flex;        
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #hebergements{
+        width: 100%;
+        height: auto;
+        padding: 0%;
+        margin-top: 2%;
+        display: flex;
+        flex-flow: row wrap;
+        order: 2;
+        background-color: white;
+    }
+
+    #heberg_text {
+        font-size: 1.2em;
+        margin-top: 20px;
+        width: 95%;
+    }
+    
+    #text_aff{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .picture_marseille{
+        background-color: white;
+        max-width: 45%;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border: none; 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    a.link_card_hebergement{
+        text-decoration: none;
+        color: #000;
+        height: 250px;
+        border-radius: 20px;
+        font-size: 1em;
+        
+    }
+
+    .photo{
+        height: 55%;
+        
+    }
+
+    .note{
+        display: flex;
+        margin-left: 25px;
+        justify-content: space-between;
+        width: 5%;
+        margin-bottom: 15px;
+    }
+
+    #head_populaire{
+        align-items: center;
+    }
+
+    #head_populaire img{
+        width: 35px;
+        height: 30px;
+    }
+
+    #title_populaire{
+        font-size: 1.1em;
+    }
+
+    #populaire{
+        order: 1;
+        max-width: 100%;
+        min-width: 300px;
+        height: 100%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .picture_marseille_populaire{
+        background-color: white;
+        max-width: 70%;
+        min-width: 280px ;
+        height: 180px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        color:black;
+        font-size: 0.8em;
+        
+    }
+
+
+    .photo_populaire{
+        width: 45%;
+        height: 90%;
+    }
+
+    a.link_card_populaire{
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 30px 0px 30px 0px;
+        color:black;
+    }
+
+
+    #note_populaire{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    #title_section2{
+       align-self: flex-start;
+       font-size: 1.2em;
+    }
+
+    #activites{
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .card_activite_large{
+        background-color: white;
+        width: 45%;
+        height: 380px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 95px;
+        font-size: 1.4em;
+    }
+    
+    .bloc_photo_large{
+        height: 80%;
+    }
+    
+    .title_activite{
+        width: 95%;
+        font-size: 0.8em;
+    }
+
+    .card_activite_pomegues{
+        background-color: white;
+        width: 45%;
+        height: 380px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+    }
+
+    .card_activite_frioul{
+        background-color: white;
+        width: 45%;
+        height: 380px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 95px; 
+        font-size: 1.4em;
+    }
+
+    .bloc_photo_frioul{
+        width: 100%;
+        height: 80%;
+    }
+
+    .card_activite_dame{
+        background-color: white;
+        width: 45%;
+        height: 380px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+    }
+
+    .bloc_photo_dame{
+        width: 100%;
+        height: 80%;
+    }
+
+    .card_activite_longchamp{
+        background-color: white;
+        width: 45%;
+        height: 380px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+    }
+
+    #foot{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    #contain_foot{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media screen and (max-width: 480px)
 {   
-
+    #bloc_page{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 
     #header{
         display: flex;
@@ -611,8 +1069,8 @@ a.link_footer:hover{
     }
 
     #logo{
-        width: 250px;
-        height: 110px;
+        width: 150px;
+        height: 100px;
     }
 
     #menu{
@@ -621,7 +1079,7 @@ a.link_footer:hover{
 
     nav{
         width: 100%;
-        font-size: 2em;
+        font-size: 1em;
         text-align: center;
         padding-left: 0px;
     } 
@@ -654,34 +1112,32 @@ a.link_footer:hover{
 
     a.inscription{
         position: absolute;
-        top: 35px;
-        right: 30px; 
-        font-size: 2.5em;
+        top: 40px;
+        right: 25px; 
+        font-size: 1.5em;
         text-align: end;  
     }
 
     #title_page{
-        font-size: 3em;
-        width: 80%;
-
+        font-size: 1.8em;
+        width: 100%;
     }
     
-
-
     #title_head p{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     
     #container_filter{
         display: flex;
-        max-width: 700px;
+        width: 100%;
         margin-top: 30px;
+        
     }
 
     #bloc1{
-        width: 90px;
-        height: 90px;
+        width: 55px;
+        height: 61px;
         background-color: #F2F2F2;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
@@ -695,14 +1151,14 @@ a.link_footer:hover{
     }
 
     input{
-        width: 300px;
-        height: 84px;
+        width: 180px;
+        height: 55px;
         text-align: center;
         font-weight: bold;
         font-family: 'Raleway' , sans-serif;
         border-color: #F2F2F2;
         border: none;
-        font-size: 1.6em;
+        font-size: 1.1em;
     }
 
     form{
@@ -711,6 +1167,7 @@ a.link_footer:hover{
         border-top: 2px solid #F2F2F2;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+      
     }
 
     #button_search{
@@ -731,7 +1188,7 @@ a.link_footer:hover{
         color: white;
         border-radius: 20px;
         display: block;
-        width: 100px;
+        width: 55px;
         font-size: 0.9em;
         text-align: center;
         height: 100%;
@@ -742,22 +1199,22 @@ a.link_footer:hover{
         max-width: 100%;
         justify-content: space-between;
         align-items: flex-start;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .filtre{
-        font-size: 1.5em; 
+        width: 100%;
+        font-size: 1.2em; 
     }
 
     .container{
         border-bottom: 3px solid #F2F2F2;
         border-top: 3px solid #F2F2F2;
         border-right: 3px solid #F2F2F2;
-        height: 100px;
-        width: 400px;
+        height: 60px;
+        width: 240px;
         border-radius: 50px;
         display: flex;
-        cursor: pointer;
         margin-bottom: 20px;    
     }
 
@@ -768,22 +1225,19 @@ a.link_footer:hover{
     .container_p{
         order : 1;
         display: flex;
-
+        justify-content: flex-start;
+        margin-left: 20px;
         width: 100%;
     }
     
     .container_p p, .filtre p{
-        font-size: 1.7em;
-        font-weight: bold;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
+        font-size: 1em;
     }
     
     .bloc_icon{
-
         border-radius: 80px;
         height: 100px;
-        min-width: 100px ;
+        min-width: 60px ;
         background-color: #DEEBFF;
         align-self: center;
         display: flex;
@@ -808,10 +1262,9 @@ a.link_footer:hover{
 
     #icon_info{
         border: 2px solid #F2F2F2;
-
-        width: 70px;
+        width: 40px;
         border-radius: 50%; 
-        height: 60px;
+        height: 35px;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -823,11 +1276,11 @@ a.link_footer:hover{
     }
 
     #svg_info{
-        width: 15px;
+        width: 10px;
     }
 
     #text_info{
-        font-size: 1.4em;
+        font-size: 1em;
     }
     
     #section1{
@@ -849,26 +1302,26 @@ a.link_footer:hover{
         padding: 0%;
         margin-top: 2%;
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
         order: 2;
         background-color: white;
     }
 
     #heberg_text {
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin-top: 20px;
         width: 95%;
     }
     
     #text_aff{
-        width: 95%;
-        font-size: 1.4em;
+        width: 100%;
+        font-size: 1.2em;
     }
 
     .picture_marseille{
         background-color: white;
-        max-width: 100%;
-        height: 400px;
+        max-width: 45%;
+        height: 250px;
         border-radius: 20px;
         box-shadow: 0px 0px 10px 0px #000;
         border: none; 
@@ -880,20 +1333,21 @@ a.link_footer:hover{
     a.link_card_hebergement{
         text-decoration: none;
         color: #000;
-        height: 378px;
+        height: 250px;
         border-radius: 20px;
-        font-size: 1.4em;
+        font-size: 1em;
+        
     }
 
     .photo{
-        height: 65%;
+        height: 55%;        
     }
 
     .note{
         display: flex;
         margin-left: 25px;
         justify-content: space-between;
-        width: 15%;
+        width: 5%;
         margin-bottom: 15px;
     }
 
@@ -901,33 +1355,45 @@ a.link_footer:hover{
         align-items: center;
     }
 
+    #head_populaire img{
+        width: 35px;
+        height: 30px;
+    }
+
     #title_populaire{
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
 
     #populaire{
         order: 1;
-        width: 100%;
+        max-width: 100%;
+        min-width: 300px;
         height: 100%;
         background-color: #F2F2F2;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         padding-bottom: 30px;
- 
     }
 
     .picture_marseille_populaire{
         background-color: white;
-        width: 100%;
-        height: 300px;
+        max-width: 90%;
+        min-width: 280px ;
+        height: 160px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
         flex-flow: column wrap;
-
         color:black;
-        font-size: 1.5em;
+        font-size: 0.7em;
+        
+    }
+
+
+    .photo_populaire{
+        width: 45%;
+        height: 90%;
     }
 
     a.link_card_populaire{
@@ -941,12 +1407,12 @@ a.link_footer:hover{
     #note_populaire{
         display: flex;
         justify-content: space-between;
-        width: 15%;
+       
     }
 
     #title_section2{
        align-self: flex-start;
-       font-size: 1.4em;
+       font-size: 1.2em;
     }
 
     #activites{
@@ -960,7 +1426,7 @@ a.link_footer:hover{
     .card_activite_large{
         background-color: white;
         width: 100%;
-        height: 400px;
+        height: 250px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
@@ -975,13 +1441,13 @@ a.link_footer:hover{
     
     .title_activite{
         width: 95%;
-        align-self: flex-end;
+        font-size: 0.8em;
     }
 
     .card_activite_pomegues{
         background-color: white;
         width: 100%;
-        height: 400px;
+        height: 250px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
@@ -992,7 +1458,7 @@ a.link_footer:hover{
     .card_activite_frioul{
         background-color: white;
         width: 100%;
-        height: 400px;
+        height: 250px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
@@ -1004,7 +1470,7 @@ a.link_footer:hover{
     .card_activite_dame{
         background-color: white;
         width: 100%;
-        height: 400px;
+        height: 250px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
@@ -1015,7 +1481,7 @@ a.link_footer:hover{
     .card_activite_longchamp{
         background-color: white;
         width: 100%;
-        height: 400px;
+        height: 250px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
@@ -1033,11 +1499,8 @@ a.link_footer:hover{
         display: flex;
         width: auto;
         flex-direction: column;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
-
-
-
 
 }   
 
