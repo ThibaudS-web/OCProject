@@ -67,7 +67,7 @@ a.inscription:hover{
 
 #bloc1{
     height: 59px;
-    width: 50px;
+    width: 54px;
     background-color: #F2F2F2;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -647,10 +647,11 @@ a.link_footer:hover{
 
     a.inscription{
         position: absolute;
-        top: 45px;
-        right: 25px; 
-        font-size: 2em;
+        top: 19%;
+        right: 4%; 
+        font-size: 1.5em;
         text-align: end;  
+        
     }
 
     #title_page{
@@ -715,14 +716,19 @@ a.link_footer:hover{
     }
     
     #button_search_mini{
+        background-color: #0065FC;
         color: white;
         border-radius: 20px;
+        width: 60px;
         display: block;
-        width: 55px;
         font-size: 0.9em;
         text-align: center;
         height: 100%;
-    }   
+        border: none;
+    } 
+    
+
+
 
     #bar_filter{
         display: flex;
@@ -828,7 +834,8 @@ a.link_footer:hover{
     }
 
     #hebergements{
-        width: 100%;
+        max-width: 100%;
+        min-width: 300px;
         height: auto;
         padding: 0%;
         margin-top: 2%;
@@ -836,6 +843,7 @@ a.link_footer:hover{
         flex-flow: row wrap;
         order: 2;
         background-color: white;
+        margin: auto; 
     }
 
     #heberg_text {
@@ -911,7 +919,7 @@ a.link_footer:hover{
     .picture_marseille_populaire{
         background-color: white;
         max-width: 70%;
-        min-width: 280px ;
+        min-width: 350px ;
         height: 180px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
@@ -965,7 +973,7 @@ a.link_footer:hover{
         display: flex;
         flex-direction: column;
         margin-bottom: 95px;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     
     .bloc_photo_large{
@@ -985,7 +993,7 @@ a.link_footer:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .card_activite_frioul{
@@ -997,7 +1005,7 @@ a.link_footer:hover{
         display: flex;
         flex-direction: column;
         margin-bottom: 95px; 
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .bloc_photo_frioul{
@@ -1013,7 +1021,7 @@ a.link_footer:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .bloc_photo_dame{
@@ -1029,7 +1037,7 @@ a.link_footer:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     #foot{
@@ -1096,7 +1104,9 @@ a.link_footer:hover{
         border-bottom: 5px solid #F2F2F2;
         padding-bottom: 30px;
         margin: auto;
-        width: 50%
+        width: 50%;
+        font-size: 0.9em;
+        
     }
 
     li:hover{
@@ -1112,10 +1122,11 @@ a.link_footer:hover{
 
     a.inscription{
         position: absolute;
-        top: 40px;
-        right: 25px; 
+        top: 19%;
+        right: 4%; 
         font-size: 1.5em;
         text-align: end;  
+        
     }
 
     #title_page{
@@ -1136,7 +1147,7 @@ a.link_footer:hover{
     }
 
     #bloc1{
-        width: 55px;
+        width: 40px;
         height: 61px;
         background-color: #F2F2F2;
         border-bottom-left-radius: 20px;
@@ -1147,18 +1158,19 @@ a.link_footer:hover{
     }
 
     #localisation_icon{
-        width: 30px;
+        width: 20px;
     }
 
     input{
-        width: 180px;
+        max-width: 180px;
+        min-width: 150px;
         height: 55px;
         text-align: center;
         font-weight: bold;
         font-family: 'Raleway' , sans-serif;
         border-color: #F2F2F2;
         border: none;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     form{
@@ -1167,6 +1179,7 @@ a.link_footer:hover{
         border-top: 2px solid #F2F2F2;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        
       
     }
 
@@ -1185,14 +1198,21 @@ a.link_footer:hover{
     
     #button_search_mini{
 
+        background-color: #0065FC;
         color: white;
         border-radius: 20px;
+        width: 40px;
         display: block;
-        width: 55px;
         font-size: 0.9em;
         text-align: center;
         height: 100%;
+        border: none;
     }   
+
+    #mini_search{
+        width: 25px;
+    }
+
 
     #bar_filter{
         display: flex;
@@ -1297,7 +1317,8 @@ a.link_footer:hover{
     }
 
     #hebergements{
-        width: 100%;
+        max-width: 100%;
+        min-width: 270px;
         height: auto;
         padding: 0%;
         margin-top: 2%;
@@ -1305,6 +1326,8 @@ a.link_footer:hover{
         flex-flow: row wrap;
         order: 2;
         background-color: white;
+        margin: auto;
+        
     }
 
     #heberg_text {
@@ -1367,7 +1390,7 @@ a.link_footer:hover{
     #populaire{
         order: 1;
         max-width: 100%;
-        min-width: 300px;
+        min-width: 270px;
         height: 100%;
         background-color: #F2F2F2;
         border-radius: 20px;
@@ -1379,14 +1402,14 @@ a.link_footer:hover{
     .picture_marseille_populaire{
         background-color: white;
         max-width: 90%;
-        min-width: 280px ;
+        min-width: 250px ;
         height: 160px;
         box-shadow: 0px 0px 10px 0px #000;
         border-radius: 20px;
         display: flex;
         flex-flow: column wrap;
         color:black;
-        font-size: 0.7em;
+        font-size: 0.6em;
         
     }
 
@@ -1432,7 +1455,7 @@ a.link_footer:hover{
         display: flex;
         flex-direction: column;
         margin-bottom: 95px;
-        font-size: 1.4em;
+        font-size: 100%;
     }
     
     .bloc_photo_large{
@@ -1452,7 +1475,7 @@ a.link_footer:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+        font-size: 100%;
     }
 
     .card_activite_frioul{
@@ -1464,7 +1487,7 @@ a.link_footer:hover{
         display: flex;
         flex-direction: column;
         margin-bottom: 95px; 
-        font-size: 1.4em;
+        font-size: 100%;
     }
 
     .card_activite_dame{
@@ -1475,7 +1498,7 @@ a.link_footer:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+        font-size: 100%;
     }
 
     .card_activite_longchamp{
@@ -1486,7 +1509,7 @@ a.link_footer:hover{
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+        font-size: 100%;
     }
 
     #foot{
