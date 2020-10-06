@@ -216,7 +216,7 @@ form{
 }
 
 #hebergements{
-    max-width: 100%;
+    max-width: 80%;
     min-width: 300px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -264,6 +264,7 @@ a.link_card_hebergement{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    
 }
 
 .photo {
@@ -309,7 +310,7 @@ span{
 }
 
 #populaire{
-    max-width: 100%;
+    max-width: 30%;
     min-width: 450px;
     height: 850px;
     background-color: #F2F2F2;
@@ -342,7 +343,7 @@ span{
 a.link_card_populaire{
     text-decoration: none;
     width: 95%;
-    min-width: 400px;
+    
 }
 
 .picture_marseille_populaire:hover{
