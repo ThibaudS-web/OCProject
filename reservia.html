@@ -10,326 +10,280 @@
 <main>
 <div id="bloc_page">
 <header>
-<div id="header">
-    <div id="head">
-        <img id="logo" alt="logo Reservia" src="logo/desktop/reservia_desktop.svg"/>
-        <div id="menu">
-            <nav>
-                <ul id="nav_hebergements">
+    <div id="header">
+        <div id="head">
+            <img id="logo" alt="logo Reservia" src="logo/desktop/reservia_desktop.svg"/>
+            <div id="menu">
+                <nav>
+                <ul>
                     <li><a class="hebergement" href="#hebergements_ancre">Hébergements</a></li>
                     <li><a class="activite" href="#activites_ancre">Activités</a></li>
                 </ul>
-            </nav>
-            <a class="inscription" href="#">S'inscrire</a>
+                </nav>
+                <a class="inscription" href="#">S'inscrire</a>
+            </div>
         </div>
-    </div>
 
-    <div id="title_head">
-    <h1 id="title_page">Trouver votre hébergement pour des vacances de rêve</h1>
+        <div id="title_head">
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-    </div>
-    
-    <div id="container_filter">
-       
-        <div id="bloc1">
-            <img id="localisation_icon" alt="localisation" src="icon/localisation_mini.svg" >
+        </div>
+        
+        <div id="container_filter">
+        
+            <div id="bloc1">
+                <img id="localisation_icon" alt="localisation" src="icon/localisation_mini.svg" >
+            </div>
+
+
+            <form method="post" action="#">
+                <input type="text" name="localisation" value="Marseille, France"/>
+                <button id="button_search" type="submit">Rechercher</button>
+                <button id="button_search_mini" type="submit"> 
+                    <img id="mini_search" src="icon/search-solid_mini.svg" alt="Rechercher" >
+                </button>
+            </form>
         </div>
 
-
-        <form method="post" action="#">
-            <input type="text" name="localisation" value="Marseille, France"/>
-            <button id="button_search" type="submit">Rechercher</button>
-            <button id="button_search_mini" type="submit"> 
-                <img id="mini_search" src="icon/search-solid_mini.svg" alt="Rechercher" >
-            </button>
-        </form>
-
-
-
-    </div>
-
-    <div id="bar_filter">
-
-        <div class="filtre">
-            <p>Filtres</p>
-        </div> 
-    
-        <div class="container">
-            <div class="container_p">
+        <div id="bar_filter">
+            <div class="filtre">
+                <p>Filtres</p>
+            </div> 
+        
+            <div class="container">
+                <div class="bloc_icon">
+                    <img class="svg1" alt="économique" src="icon/billet_mini.svg"/>
+                </div>
                 <p>Économique</p>
             </div>
-            <div class="bloc_icon">
-                <div class="svg1">
-                    <img class="svg_filter" alt="économique" src="icon/billet_mini.svg"/>
+        
+            <div class="container">
+                <div class="bloc_icon">  
+                    <img class="svg1" alt="Familial" src="icon/familial_mini.svg"/>  
                 </div>
-            </div>
-        </div>
-    
-        <div class="container">
-            <div class="container_p">
                 <p>Familial</p>
             </div>
-            <div class="bloc_icon">
-                <div class="svg1">
-                    <img class="svg_filter" alt="Familial" src="icon/familial_mini.svg"/>
+        
+            <div class="container">
+                <div class="bloc_icon">
+                    <img class="svg1" alt="Romantique" src="icon/heart_mini.svg"/>
                 </div>
-            </div>
-        </div>
-    
-        <div class="container">
-            <div class="container_p">
                 <p>Romantique</p>
             </div>
-            <div class="bloc_icon">
-                <div class="svg1">
-                    <img id="svg_filter" alt="Romantique" src="icon/heart_mini.svg"/>
+        
+            <div class="container">
+                <div class="bloc_icon">
+                    <img class="svg1" alt="Animaux autorisés" src="icon/dog_mini.svg"/>
                 </div>
-            </div>
-        </div>
-    
-        <div class="container">
-            <div class="container_p">
                 <p>Animaux autorisés</p>
             </div>
-            <div class="bloc_icon">
-                <div class="svg1">
-                    <img class="svg_filter" alt="Animaux autorisés" src="icon/dog_mini.svg"/>
-                </div>
-            </div>
-        </div>
-    
-    </div>   
+        </div>   
 
-
-    <div id="info_bar">
-        <div id="icon_info">
-            <div id="info_svg">
-                <p><img id="svg_info" alt="info" src="icon/info_mini.svg"/></p>
+        <div id="info_bar">
+            <div id="icon_info">    
+                <img id="svg_info" alt="info" src="icon/info_mini.svg"/>
             </div>
-        </div>
-        <div id="text_info">
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="text_info">
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </div>
     </div>
-</div>
 </header>
 <section>
 
 <div id="section1">
+    <div id="hebergements">
+        <div id="heberg_text">
+            <h2 id="hebergements_ancre">Hébergements à Marseille</h2>
+        </div>
 
-<div id="hebergements">
-   
-    <div id="heberg_text">
-        <h2 id="hebergements_ancre">Hébergements à Marseille</h2>
+        <!--Auberge de la Cannebière-->
+        <article class="picture_marseille">
+            <a class="link_card_hebergement" href="#" target="blank">
+                <img class="photo" src="images/hebergement/version_png/cannebiere_l.png" alt="Auberge de la Cannebière"/>
+            
+                <div class="card_title">
+                    <h3>Auberge de la Cannebière</h3>
+                    <p>Nuit à partir de <span>25€</span></p>
+                    <div class="note">
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!--Hotel du port-->
+        <article class="picture_marseille">   
+            <a class="link_card_hebergement" href="#" target="blank">
+                <img class="photo" src="images/hebergement/version_png/hotel_port_l.png" alt="Hotel du port"/>
+                    
+                <div class="card_title">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <span>52€</span></p>
+                    <div class="note">
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!--Hotel Les mouettes-->   
+        <article class="picture_marseille">
+            <a class="link_card_hebergement" href="#" target="blank">
+                <img class="photo" src="images/hebergement/version_png/hotel_mouette_l.png" alt="Hotel Les mouettes"/>
+                <div class="card_title">
+                    <h3>Hôtel Les mouettes</h3>
+                    <p>Nuit à partir de <span>76€</span></p>
+                    <div class="note">
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!--Hotel de la mer--> 
+        <article class="picture_marseille">
+            <a class="link_card_hebergement" href="#" target="blank">
+                <img class="photo" src="images/hebergement/version_png/hotel_mer_l.png" alt="Hotel de la mer"/>
+                <div class="card_title">
+                    <h3>Hôtel de la mer</h3>
+                    <p>Nuit à partir de <span>46€</span></p>
+                    <div class="note">
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!--Auberge Le Panier--> 
+        <article class="picture_marseille">
+            <a class="link_card_hebergement" href="#" target="blank">
+                <img class="photo" src="images/hebergement/version_png/panier_l.png" alt="Auberge Le Panier"/>
+                    
+                <div class="card_title">
+                    <h3>Auberge le Panier</h3>
+                    <p>Nuit à partir de <span>23€</span></p>
+                    <div class="note">
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!--Hotel chez Amina--> 
+        <article class="picture_marseille">
+            <a class="link_card_hebergement" href="#" target="blank">
+                <img class="photo" src="images/hebergement/version_png/amina_l.png" alt="Hotel chez Amina"/>
+                    
+                <div class="card_title">
+                    <h3>Hôtel chez Amina</h3>
+                    <p>Nuit à partir de <span>96€</span></p>
+                    <div class="note">
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                        <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+            <div id="text_aff">
+                <h2>Afficher plus</h2>
+            </div>
     </div>
 
-<!--Auberge de la Cannebière-->
-<article class="picture_marseille">
-    <a class="link_card_hebergement" href="#" target="blank">
-        <img class="photo" src="images/hebergement/version_png/cannebiere_l.png" alt="Auberge de la Cannebière"/>
-    
-        <div class="card_title">
-            <h3>Auberge de la Cannebière</h3>
-            <p>Nuit à partir de <span>25€</span></p>
-        </div>
-        
-            
-        <div class="note">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-        </div>
-    </a>
-</article>
 
-<!--Hotel du port-->
-<article class="picture_marseille">   
-    <a class="link_card_hebergement" href="#" target="blank">
-        <img class="photo" src="images/hebergement/version_png/hotel_port_l.png" alt="Hotel du port"/>
-            
-        <div class="card_title">
-            <h3>Hôtel du port</h3>
-            <p>Nuit à partir de <span>52€</span></p>
+    <div id="populaire">
+        <div id="head_populaire">
+            <div id="title_populaire" >
+                <h2>Les plus populaires</h2>
+            </div>     
+            <img alt="populaire" src="icon/graph_mini.svg"/>  
         </div>
-            
-        <div class="note">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-        </div>
-    </a>
-</article>
 
- <!--Hotel Les mouettes-->   
- <article class="picture_marseille">
-    <a class="link_card_hebergement" href="#" target="blank">
-        <img class="photo" src="images/hebergement/version_png/hotel_mouette_l.png" alt="Hotel Les mouettes"/>
-            
-        <div class="card_title">
-            <h3>Hôtel Les mouettes</h3>
-            <p>Nuit à partir de <span>76€</span></p>
-        </div>
-            
-        <div class="note">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-        </div>
-    </a>
-</article>
+        <!--Hôtel le soleil du matin-->
+        <aside class="picture_marseille_populaire">
+            <a class="link_card_populaire" href="#" target="blank">   
+                <img class="photo_populaire" src="images/hebergement/version_png/soleil_matin_l.png" alt="Hôtel le soleil du matin"/>
+                
+                <div class="card_title_populaire">
+                    <h3>Hôtel le soleil du matin</h3>
+                    <p>Nuit à partir de <span>128€</span></p>
+                </div>
+                
+                <div class="note_populaire">
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                </div>
+            </a>
+        </aside>
 
- <!--Hotel de la mer--> 
-<article class="picture_marseille">
-    <a class="link_card_hebergement" href="#" target="blank">
-        <img class="photo" src="images/hebergement/version_png/hotel_mer_l.png" alt="Hotel de la mer"/>
-            
-        <div class="card_title">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <span>46€</span></p>
-        </div>
-            
-        <div class="note">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-        </div>
-    </a>
-</article>
+        <!--Au coeur de l'eau chambres d'hôtes-->
+        <aside class="picture_marseille_populaire">
+            <a class="link_card_populaire" href="#" target="blank"> 
+                <img class="photo_populaire" src="images/hebergement/version_png/chambre_hote_l.png" alt="Au coeur de l'eau chambres d'hôtes"/>
 
- <!--Auberge Le Panier--> 
-<article class="picture_marseille">
-    <a class="link_card_hebergement" href="#" target="blank">
-        <img class="photo" src="images/hebergement/version_png/panier_l.png" alt="Auberge Le Panier"/>
-            
-        <div class="card_title">
-            <h3>Auberge le Panier</h3>
-            <p>Nuit à partir de <span>23€</span></p>
-        </div>
-            
-        <div class="note">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-        </div>
-    </a>
-</article>
+                <div class="card_title_populaire">
+                    <h3>Au coeur de l'eau chambres d'hôtes</h3>
+                    <p>Nuit à partir de <span>71€</span></p>
+                </div>
+                
+                <div class="note_populaire">
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                </div>
+            </a>
+        </aside>
 
- <!--Hotel chez Amina--> 
-<article class="picture_marseille">
-    <a class="link_card_hebergement" href="#" target="blank">
-        <img class="photo" src="images/hebergement/version_png/amina_l.png" alt="Hotel chez Amina"/>
-            
-        <div class="card_title">
-            <h3>Hôtel chez Amina</h3>
-            <p>Nuit à partir de <span>96€</span></p>
-        </div>
-            
-        <div class="note">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-        </div>
-    </a>
-</article>
-
-
-
-    <div id="text_aff">
-        <h2>Afficher plus</h2>
+        <!--Hôtel Tout bleu et Blanc-->
+        <aside class="picture_marseille_populaire">  
+            <a class="link_card_populaire" href="#" target="blank"> 
+                <img class="photo_populaire" src="images/hebergement/version_png/bleu_blanc_l.png" alt="Au coeur de l'eau chambres d'hôtes"/>
+                
+                <div class="card_title_populaire">
+                    <h3>Hôtel Tout Bleu et Blanc</h3>
+                    <p>Nuit à partir de <span>68€</span></p>
+                </div>
+                
+                <div class="note_populaire">
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
+                    <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
+                </div>
+            </a>
+        </aside>
     </div>
 </div>
-
-
-<div id="populaire">
-    <div id="head_populaire">
-        <div id="title_populaire" >
-            <h2>Les plus populaires</h2>
-        </div>
-
-        <div>
-            <img alt="populaire" src="icon/graph_mini.svg"/>
-        </div>
-    </div>
-
-<!--Hôtel le soleil du matin-->
-<a class="link_card_populaire" href="#" target="blank">   
-    <aside class="picture_marseille_populaire">
-        <img class="photo_populaire" src="images/hebergement/version_png/soleil_matin_l.png" alt="Hôtel le soleil du matin"/>
-        
-        <div class="card_title_populaire">
-            <h3>Hôtel le soleil du matin</h3>
-            <p>Nuit à partir de <span>128€</span></p>
-        </div>
-        
-        <div class="note_populaire">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-        </div>
-    </aside>
-</a>
-
-
-<!--Au coeur de l'eau chambres d'hôtes-->
-<a class="link_card_populaire" href="#" target="blank"> 
-    <aside class="picture_marseille_populaire">
-        <img class="photo_populaire" src="images/hebergement/version_png/chambre_hote_l.png" alt="Au coeur de l'eau chambres d'hôtes"/>
-
-        <div class="card_title_populaire">
-            <h3>Au coeur de l'eau chambres d'hôtes</h3>
-            <p>Nuit à partir de <span>71€</span></p>
-        </div>
-        
-        <div class="note_populaire">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-        </div>
-    </aside>
-</a>
-
-
-<!--Hôtel Tout bleu et Blanc-->
-<a class="link_card_populaire" href="#" target="blank"> 
-    <aside class="picture_marseille_populaire">  
-        <img class="photo_populaire" src="images/hebergement/version_png/bleu_blanc_l.png" alt="Au coeur de l'eau chambres d'hôtes"/>
-        
-        <div class="card_title_populaire">
-            <h3>Hôtel Tout Bleu et Blanc</h3>
-            <p>Nuit à partir de <span>68€</span></p>
-        </div>
-        
-        <div class="note_populaire">
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile bleu" src="icon/starblue_full_mini.svg"/></div>
-            <div class="star"><img alt="étoile grise" src="icon/stargrey_full_mini.svg"/></div>
-        </div>
-    </aside>
-</a>
-
-
-</div>
-
-</div>
-
 </section>
 
 <section>
@@ -342,20 +296,15 @@
 <article class="card_activite_large">
     <a class="link_card_activite" href="#" target="blank">
         <div class="bloc_photo_large"><img class="photo_large" src="images/activites/format_png/vieux_port_l.png" alt="Vieux port"/></div>
-        <div class="title_activite">
-            <h3>Vieux port</h3>
-        </div>
+        <h3>Vieux port</h3>
     </a>
 </article>
-
 
 <!--Fort de Pomègues-->
 <article class="card_activite_pomegues">
     <a class="link_card_activite" href="#" target="blank">
         <div class="bloc_photo_pomegues"><img class="photo_pomegues" src="images/activites/format_png/pomegues_l.png" alt="Fort de Pomègues"/></div>
-        <div class="title_activite">
-            <h3>Fort de Pomègues</h3>
-        </div>
+        <h3>Fort de Pomègues</h3>
     </a>
 </article>
 
@@ -363,9 +312,7 @@
 <article class="card_activite_frioul">
     <a class="link_card_activite" href="#" target="blank">
         <div class="bloc_photo_frioul"><img class="photo_frioul" alt="Iles du Frioul" src="images/activites/format_png/iles_frioul_l.png"/></div>
-        <div class="title_activite">
-            <h3>Îles du Frioul</h3>
-        </div>
+        <h3>Îles du Frioul</h3>
     </a>
 </article>
     
@@ -373,9 +320,7 @@
 <article class="card_activite_large">
     <a class="link_card_activite" href="#" target="blank">
     <div class="bloc_photo_large"><img class="photo_large" src="images/activites/format_png/calanques_l.png" alt="Parc National des Calanques"/></div>
-    <div class="title_activite">
-        <h3>Parc National des Calanques</h3>
-    </div>
+    <h3>Parc National des Calanques</h3>
 </a>
 </article>
 
@@ -383,9 +328,7 @@
 <article class="card_activite_dame">
     <a class="link_card_activite" href="#" target="blank">
         <div class="bloc_photo_dame"><img class="photo_dame" src="images/activites/format_png/dame_l.png" alt="Notre-Dame-de-la-Garde"/></div>
-        <div class="title_activite">
-            <h3>Notre-Dame-de-la-Garde</h3>
-        </div>
+        <h3>Notre-Dame-de-la-Garde</h3>
     </a>
 </article>
 
@@ -393,27 +336,24 @@
 <article class="card_activite_longchamp">
     <a class="link_card_activite" href="#" target="blank">
         <div class="bloc_photo_longchamp"><img class="photo_longchamp" src="images/activites/format_png/longchamp_l.png" alt="Parc Longchamp"/></div>
-        <div class="title_activite">
-            <h3>Parc Longchamp</h3>
-        </div>
+        <h3>Parc Longchamp</h3> 
     </a>
 </article>
 
 </div>
-
 </div>
-
 </section>
 </div>
 </main>
+
 <footer>
 <div id="foot">
     <div id="contain_foot">
         <div class="textfoot"> 
             <h3>A propos</h3>
-                <div><a class="link_footer" href="#">Fonctionnement du site</a></div>
-                <div><a class="link_footer" href="#">Conditions générales de vente</a></div>
-                <div><a class="link_footer" href="#">Données et confidentialité</a></div>
+            <a class="link_footer" href="#">Fonctionnement du site</a>
+            <a class="link_footer" href="#">Conditions générales de vente</a>
+            <a class="link_footer" href="#">Données et confidentialité</a>
         </div>
 
         <div class="textfoot">
@@ -431,9 +371,5 @@
     </div>
 </div>
 </footer>
-
-
-
 </body>
-
 </html>
